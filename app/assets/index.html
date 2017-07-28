@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title></title>
+    <script type="text/javascript">
+        //这个function是需要被java调用的  
+        function jsText(text){  
+            document.getElementById('barcode').innerHTML=text;  
+        } 
+         function wave() {
+          document.getElementById("demo").innerHTML = "Hello World!";
+         } 
+
+
+    </script>
+</head>
+<body>
+<input type="button" onclick="jsi.showToast('测试js调用系统api')" value="调用系统api Toast"/><br/>
+<input type="button" onclick="jsi.showJsText('测试java回调js')" value="让java方法回调html中的js方法"/>
+<div id="barcode"></div>
+<div>
+    <a href="#" id="demo" onclick="jsi.clickOnAndroid()">Click Me</a>
+</div>
+</body>
+</html> 
